@@ -372,8 +372,8 @@ div {
     width: 80%;
     margin: 50px auto;
     background: rgb(255, 255, 255);
-    box-shadow: 0 18px 23.04px 0.96px rgba(14,89,179,.24), 0 0 20px 8px rgba(14,89,179,.24);
-    border-radius: 10px;
+    box-shadow: 0 18px 23.04px 0.96px rgba(186, 186, 186, 0.24), 0 0 20px 8px rgba(184, 184, 184, 0.24);
+
     padding: 50px 0;
 }
 .form-group {
@@ -388,7 +388,7 @@ div {
 	transition: 0.3s;
 	letter-spacing: 1px;
 	color: #aaaaaa;
-	border: 2px solid #5b8ae3;
+	border: 2px solid #3a3a3a;
     border-radius: 5px;
 }
 .form-group textarea {
@@ -399,7 +399,7 @@ div {
 	transition: 0.3s;
 	letter-spacing: 1px;
 	color: #aaaaaa;
-	border: 2px solid #5b8ae3;
+	border: 2px solid #3a3a3a;
     border-radius: 5px;
 }
 .form-group input[type='date'] {
@@ -410,7 +410,7 @@ div {
 	transition: 0.3s;
 	letter-spacing: 1px;
 	color: #aaaaaa;
-	border: 2px solid #5b8ae3;
+	border: 2px solid #3a3a3a;
     border-radius: 5px;
 }
 
@@ -426,7 +426,7 @@ div {
 	margin: 0.5rem 0.5rem 2rem 0.5rem;
 	padding: 0.5rem 1rem;
 	list-style: none;
-    border: 2px solid #5b8ae3;
+    border: 2px solid #3a3a3a;
     border-radius: 5px;
 }
 .category .list_item {
@@ -464,13 +464,13 @@ div {
 	left: -0.25rem;
 	width: 1.25rem;
 	height: 1.25rem;
-	background: #5b8ae3;
+	background: #3a3a3a;
 }
 .category .option-input:checked:before {
 	-webkit-transform: scale(0, 0);
 	        transform: scale(0, 0);
 	border-width: 0.625rem;
-	border-color: #5b8ae3;
+	border-color: #3a3a3a;
 }
 
 
@@ -493,9 +493,9 @@ div {
 	cursor: pointer;
 	user-select: none;
 	color: #ffffff;
-	border: 1px solid #5b8ae3;
+	border: 1px solid #3a3a3a;
 	border-radius: 0.25rem;
-	background: #5b8ae3;
+	background: #3a3a3a;
 }
 .btn:after {
 	position: absolute;
@@ -512,8 +512,8 @@ div {
 }
 .btn:hover {
 	color: #ffffff;
-	border-color: #5b8ae3;
-	background-color: #5b8ae3;
+	border-color: #3a3a3a;
+	background-color: #3a3a3a;
 }
 .btn:active:after {
 	margin-top: 0;
@@ -525,11 +525,11 @@ div {
 }
 .btn:focus {
 	color: #ffffff;
-	border: 1px solid #2d69d8;
+	border: 1px solid #3a3a3a;
 }
 
 .form-group label{
-    background-color: #5b8ae3;
+    background-color: #3a3a3a;
     padding: 3px 5px;
     font-size: 12px;
     color: #fff;

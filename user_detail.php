@@ -69,11 +69,9 @@ if ($status == false) {
 
     <header class="l-header">
         <div class="logo">
-            <a href="index.html">
-                <h1 class="header-logo"><img src="" alt="おきまり"></h1>
-            </a>
+            <h1 class="header-logo"><img src="images/logo.png" alt=""></h1>
         </div>
-        <div class="header-logo"><a href=""><img src="images/logo.png" alt="おきまり"></a></div>
+        <div class="header-logo"><img src="" alt=""></div>
         <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
         <nav class="globalnavi">
             <ul class="globalnavi__inner">

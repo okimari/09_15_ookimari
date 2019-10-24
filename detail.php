@@ -78,14 +78,11 @@ $menu = menu();
     </head>
 
     <body>
-
         <header class="l-header">
             <div class="logo">
-                <a href="index.html">
-                    <h1 class="header-logo"><img src="" alt="おきまり"></h1>
-                </a>
+                <h1 class="header-logo"><img src="images/logo.png" alt=""></h1>
             </div>
-            <div class="header-logo"><a href=""><img src="images/logo.png" alt="おきまり"></a></div>
+            <div class="header-logo"><img src="" alt="おきまり"></div>
             <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
             <nav class="globalnavi">
                 <ul class="globalnavi__inner">
@@ -94,8 +91,7 @@ $menu = menu();
             </nav>
         </header>
 
-
-        <form action="insert.php" method="post">
+        <form action="#" method="post">
             <div class="form-group">
                 <label for="name">書籍名</label>
                 <input type="text" class="form-control" id="name" name="name" value="<?= $rs['name'] ?>" disabled="disabled">

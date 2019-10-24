@@ -38,11 +38,11 @@ $status = $stmt->execute();
 
 
 
-if (strtotime("now -7 day") < strtotime($modified) && strtotime("now +7 day") > strtotime($modified)) {
-    echo "7日以内";
-} else {
-    echo "7日以降or以前";
-}
+// if (strtotime("now -7 day") < strtotime($modified) && strtotime("now +7 day") > strtotime($modified)) {
+//     echo "7日以内";
+// } else {
+//     echo "7日以降or以前";
+// }
 
 
 
@@ -56,13 +56,13 @@ if ($status == false) {
     //http://php.net/manual/ja/pdostatement.fetch.php
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<li>';
-        $view .= '<a href="detail.php?id=' . $result['id'] . '"';
+        $view .= '<a href="detail2.php?id=' . $result['id'] . '"';
         $view .= '<dl>';
         $view .= '<dt>' . $result['name'] . '</dt>'; //書籍の名前
         // $view .= '<td>' . $result['url'] . '</td>'; //書籍のURL
         // $view .= '<td>' . $result['comment'] . '</td>'; //本のコメント
         $view .= '<dd>';
-        $view .= '<p class="category">' . $result['category'] . '</p>'; //カテゴリーだけlist.jsで呼び出すのでclss名追加
+        $view .= '<p class="category02">' . $result['category'] . '</p>'; //カテゴリーだけlist.jsで呼び出すのでclss名追加
         $view .= '<p class="indate">' . $result['indate'] . '</p>'; //日時 
         $view .= '<dd>';
         //$view .= '<td><a href="detail.php?id=' . $result['id'] . '" class="badge badge-primary">Edit</a></td>'; //日時
@@ -119,15 +119,13 @@ if ($status == false) {
 <body>
     <header class="l-header">
         <div class="logo">
-            <a href="index.html">
-                <h1 class="header-logo"><img src="" alt="おきまり"></h1>
-            </a>
+            <h1 class="header-logo"><img src="images/logo.png" alt=""></h1>
         </div>
-        <div class="header-logo"><a href=""><img src="" alt="おきまり"></a></div>
+        <div class="header-logo"><img src="" alt=""></div>
         <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
         <nav class="globalnavi">
             <ul class="globalnavi__inner">
-                <?= $menu ?>
+                <?= $kanri_menu ?>
             </ul>
         </nav>
     </header>
@@ -138,10 +136,10 @@ if ($status == false) {
 
 
             <div id="list_boxs">
-                <p>カテゴリーで検索してね</p>
+                <!-- <p>カテゴリーで検索してね</p>
                 <p>[MANGA]・[NOVEL]・[DESIGN]・[LIVING]</p>
                 <input id="custom-search-field" placeholder="Search name" />
-                <button class="sort" data-sort="category">検索</button>
+                <button class="sort" data-sort="category">検索</button> -->
 
 
                 <!-- ここにDBから取得したデータを表示しよう -->

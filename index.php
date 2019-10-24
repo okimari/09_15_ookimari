@@ -41,7 +41,7 @@ if ($status == false) {
         // time();
 
         $view .= '<dd>';
-        $view .= '<p class="category">' . $result['category'] . '</p>'; //カテゴリーだけlist.jsで呼び出すのでclss名追加
+        $view .= '<p class="category02">' . $result['category'] . '</p>'; //カテゴリーだけlist.jsで呼び出すのでclss名追加
         $view .= '<p class="indate">' . $result['indate'] . '</p>'; //日時 
         $view .= '<dd>';
         //$view .= '<td><a href="detail.php?id=' . $result['id'] . '" class="badge badge-primary">Edit</a></td>'; //日時
@@ -73,15 +73,11 @@ $menu = menu();
 
 <body>
 
-
-
     <header class="l-header">
         <div class="logo">
-            <a href="index.html">
-                <h1 class="header-logo"><img src="" alt="おきまり"></h1>
-            </a>
+            <h1 class="header-logo"><img src="logo.png" alt=""></h1>
         </div>
-        <div class="header-logo"><img src="logo.png" alt="おきまり"></div>
+        <div class="header-logo"><img src="" alt=""></div>
         <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
         <nav class="globalnavi">
             <ul class="globalnavi__inner">
@@ -89,7 +85,6 @@ $menu = menu();
             </ul>
         </nav>
     </header>
-
 
     <!-- <section class="blog">
         <div class="wrap_blog">

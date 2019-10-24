@@ -117,23 +117,18 @@ if ($status == false) {
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">おきまりブログ</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
-            <a class="nav-link" href="user_login.php">ログイン</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="user_index.php">ユーザー登録</a>
-          </li> -->
-                    <?= $kanri_menu ?>
-                </ul>
-            </div>
+    <header class="l-header">
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="header-logo"><img src="" alt="おきまり"></h1>
+            </a>
+        </div>
+        <div class="header-logo"><a href=""><img src="" alt="おきまり"></a></div>
+        <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
+        <nav class="globalnavi">
+            <ul class="globalnavi__inner">
+                <?= $menu ?>
+            </ul>
         </nav>
     </header>
 

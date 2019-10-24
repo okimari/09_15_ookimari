@@ -34,6 +34,12 @@ if ($status == false) {
         $view .= '<dt>' . $result['name'] . '</dt>'; //書籍の名前
         // $view .= '<td>' . $result['url'] . '</td>'; //書籍のURL
         // $view .= '<td>' . $result['comment'] . '</td>'; //本のコメント
+
+        // if (time() - strtotime($result['indate']) < (3600 * 24)) {
+        //     echo "new";
+        // }
+        // time();
+
         $view .= '<dd>';
         $view .= '<p class="category">' . $result['category'] . '</p>'; //カテゴリーだけlist.jsで呼び出すのでclss名追加
         $view .= '<p class="indate">' . $result['indate'] . '</p>'; //日時 
@@ -46,6 +52,7 @@ if ($status == false) {
     }
 }
 $menu = menu();
+
 ?>
 
 
@@ -65,45 +72,56 @@ $menu = menu();
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">おきまりブログ</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <?= $menu ?>
-                </ul>
-            </div>
+
+
+
+    <header class="l-header">
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="header-logo"><img src="" alt="おきまり"></h1>
+            </a>
+        </div>
+        <div class="header-logo"><img src="logo.png" alt="おきまり"></div>
+        <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
+        <nav class="globalnavi">
+            <ul class="globalnavi__inner">
+                <?= $menu ?>
+            </ul>
         </nav>
     </header>
 
 
-    <section class="blog">
+    <!-- <section class="blog">
         <div class="wrap_blog">
             <div id="list_boxs">
                 <p>カテゴリーで検索してね</p>
                 <p>[MANGA]・[NOVEL]・[DESIGN]・[LIVING]</p>
                 <input id="custom-search-field" placeholder="Search name" />
-                <button class="sort" data-sort="category">検索</button>
+                <button class="sort" data-sort="category">検索</button> -->
 
-                <!-- ここにDBから取得したデータを表示しよう -->
-                <table class="table table-striped">
-                    <div class="blog_list">
-                        <ul>
-                            <?= $view ?>
-                        </ul>
-                    </div>
-                </table>
-            </div>
+    <!-- ここにDBから取得したデータを表示しよう -->
+    <table class="table table-striped">
+        <div class="blog_list">
+            <ul>
+                <?= $view ?>
+            </ul>
         </div>
+    </table>
+    </div>
+    </div>
     </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/list.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/home-movie.js"></script>
+    <script src="js/jquery-ui-datepicker.js"></script>
 
     <!-- list.jsの指定 -->
     <script>

@@ -30,23 +30,18 @@ $kanri_menu = kanri_menu();
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">BOOKおまとめリスト</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
-            <a class="nav-link" href="select.php">データ一覧</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="category01.php"></a>
-          </li> -->
-                    <?= $kanri_menu ?>
-                </ul>
-            </div>
+    <header class="l-header">
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="header-logo"><img src="images/logo.png" alt="おきまり"></h1>
+            </a>
+        </div>
+        <div class="header-logo"><a href=""><img src="" alt="おきまり"></a></div>
+        <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
+        <nav class="globalnavi">
+            <ul class="globalnavi__inner">
+                <?= $menu ?>
+            </ul>
         </nav>
     </header>
 
@@ -138,6 +133,19 @@ $kanri_menu = kanri_menu();
       document.getElementById('popup').style.display = 'none';
     }
   </script> -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/list.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/home-movie.js"></script>
+    <script src="js/jquery-ui-datepicker.js"></script>
 </body>
 
 </html>

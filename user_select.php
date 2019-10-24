@@ -67,6 +67,10 @@ if ($status == false) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ユーザー管理</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         div {
             padding: 10px;
@@ -76,20 +80,20 @@ if ($status == false) {
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">ユーザー管理</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <?= $kanri_menu ?>
-                </ul>
-            </div>
+    <header class="l-header">
+        <div class="logo">
+            <a href="index.html">
+                <h1 class="header-logo"><img src="" alt="おきまり"></h1>
+            </a>
+        </div>
+        <div class="header-logo"><a href=""><img src="" alt="おきまり"></a></div>
+        <a href="#menu" class="sp-menu-btn"><span>メニューを開く</span><span></span><span></span></a>
+        <nav class="globalnavi">
+            <ul class="globalnavi__inner">
+                <?= $kanri_menu ?>
+            </ul>
         </nav>
     </header>
-
     <div>
         <ul class="table">
             <table class="table" style="table-layout: fixed;">
@@ -108,6 +112,17 @@ if ($status == false) {
         </ul>
     </div>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/list.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/home-movie.js"></script>
+    <script src="js/jquery-ui-datepicker.js"></script>
 </body>
 
 </html>
